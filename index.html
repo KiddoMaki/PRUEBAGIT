@@ -3,13 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=prueba1/">
-  <title>PRUEBAGIT | Página principal</title>
+  <meta name="description" content="Perfil breve de Lionel Messi, futbolista argentino.">
+  <title>Lionel Messi | Perfil futbolístico</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html" aria-label="Inicio de Perfil futbolístico">Perfil futbolístico</a>
+      <nav aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#legado">Legado</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <p>Abriendo la página de Lionel Messi...</p>
-    <p><a href="prueba1/">Continuar a la página</a></p>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fútbol internacional · Argentina</p>
+          <h1 id="page-title">Lionel Messi</h1>
+          <p class="intro">Una mirada breve a la trayectoria de uno de los futbolistas más influyentes de su generación.</p>
+          <a class="button" href="#perfil">Conocer su perfil</a>
+        </div>
+        <figure class="player-image">
+          <img src="assets/lionel-messi.jpg" alt="Lionel Messi con la camiseta de la selección argentina durante un partido" width="701" height="1000">
+          <figcaption>Lionel Messi, capitán de Argentina. <a href="https://commons.wikimedia.org/wiki/File:Lionel_Messi_20180626.jpg" rel="noopener noreferrer">Ver fuente de la fotografía</a>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="perfil" class="profile-section" aria-labelledby="profile-title">
+      <div class="container">
+        <p class="eyebrow">El jugador</p>
+        <h2 id="profile-title">Precisión, visión y constancia</h2>
+        <div class="facts-grid">
+          <article class="fact">
+            <h3>Posición</h3>
+            <p>Delantero / mediapunta</p>
+          </article>
+          <article class="fact">
+            <h3>Nacionalidad</h3>
+            <p>Argentina</p>
+          </article>
+          <article class="fact">
+            <h3>Estilo</h3>
+            <p>Regate, pase y definición</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="legado" class="legacy-section" aria-labelledby="legacy-title">
+      <div class="container legacy-content">
+        <div>
+          <p class="eyebrow">Legado</p>
+          <h2 id="legacy-title">El juego como lenguaje</h2>
+        </div>
+        <p>Su carrera combina creatividad individual, lectura colectiva y una capacidad extraordinaria para decidir partidos en momentos clave.</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Proyecto estático de prueba · 2026</p>
+    </div>
+  </footer>
 </body>
 </html>
